@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catriel Bartezaghi - Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#00668a",
+                      "secondary-fixed": "#e8ddff",
+                      "surface-dim": "#0f1418",
+                      "surface-elevated": "#1D263B",
+                      "on-error": "#690005",
+                      "secondary-soft": "rgba(167, 139, 250, 0.14)",
+                      "surface-container-low": "#171c20",
+                      "text-primary": "#F8FAFC",
+                      "inverse-on-surface": "#2c3135",
+                      "success-soft": "rgba(34, 197, 94, 0.12)",
+                      "success": "#22C55E",
+                      "surface-container-lowest": "#0a0f12",
+                      "text-muted": "#94A3B8",
+                      "on-primary-fixed-variant": "#004c69",
+                      "on-secondary-fixed": "#21005e",
+                      "outline": "#87929a",
+                      "tertiary-fixed-dim": "#ffb960",
+                      "inverse-surface": "#dee3e8",
+                      "border": "rgba(148, 163, 184, 0.18)",
+                      "surface-container-highest": "#303539",
+                      "text-secondary": "#CBD5E1",
+                      "background-soft": "#111827",
+                      "tertiary-fixed": "#ffddb8",
+                      "secondary-container": "#4f319c",
+                      "primary-fixed-dim": "#7bd0ff",
+                      "on-tertiary": "#472a00",
+                      "surface": "#151B2E",
+                      "primary-container": "#38bdf8",
+                      "outline-variant": "#3e484f",
+                      "on-tertiary-fixed": "#2a1700",
+                      "surface-container-high": "#252b2e",
+                      "surface-variant": "#303539",
+                      "on-primary-fixed": "#001e2c",
+                      "tertiary-container": "#f1a02b",
+                      "on-background": "#dee3e8",
+                      "primary-fixed": "#c4e7ff",
+                      "error": "#ffb4ab",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-container": "#004965",
+                      "on-secondary-fixed-variant": "#4f319c",
+                      "on-secondary": "#381385",
+                      "primary": "#8ed5ff",
+                      "on-surface-variant": "#bdc8d1",
+                      "on-tertiary-fixed-variant": "#653e00",
+                      "tertiary": "#ffc176",
+                      "background": "#0B1020",
+                      "surface-bright": "#343a3e",
+                      "secondary": "#cebdff",
+                      "surface-tint": "#7bd0ff",
+                      "primary-soft": "rgba(56, 189, 248, 0.14)",
+                      "on-tertiary-container": "#613b00",
+                      "on-primary": "#00354a",
+                      "primary-hover": "#0EA5E9",
+                      "on-secondary-container": "#bea8ff",
+                      "secondary-fixed-dim": "#cebdff",
+                      "on-surface": "#dee3e8",
+                      "error-container": "#93000a",
+                      "surface-container": "#1b2024"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "space-4": "1rem",
+                      "card-padding": "2rem",
+                      "space-24": "6rem",
+                      "space-8": "2rem",
+                      "space-3": "0.75rem",
+                      "section-mobile": "4.5rem",
+                      "container-max": "1120px",
+                      "section-desktop": "8rem",
+                      "gutter": "1.5rem",
+                      "space-12": "3rem",
+                      "space-6": "1.5rem",
+                      "space-2": "0.5rem",
+                      "space-16": "4rem",
+                      "space-1": "0.25rem"
+              },
+              "fontFamily": {
+                      "headline-3xl": ["Geist"],
+                      "body-base": ["Geist"],
+                      "label-xs": ["JetBrains Mono"],
+                      "label-code": ["JetBrains Mono"],
+                      "body-xl": ["Geist"],
+                      "body-lg": ["Geist"],
+                      "body-sm": ["Geist"],
+                      "headline-5xl": ["Geist"],
+                      "headline-4xl": ["Geist"],
+                      "headline-2xl": ["Geist"]
+              },
+              "fontSize": {
+                      "headline-3xl": ["2rem", { "lineHeight": "1.3", "fontWeight": "600" }],
+                      "body-base": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "label-xs": ["0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                      "label-code": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                      "body-xl": ["1.25rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }],
+                      "headline-5xl": ["3.5rem", { "lineHeight": "1.1", "fontWeight": "700" }],
+                      "headline-4xl": ["2.75rem", { "lineHeight": "1.2", "fontWeight": "700" }],
+                      "headline-2xl": ["1.5rem", { "lineHeight": "1.4", "fontWeight": "600" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { font-family: 'Geist', sans-serif; background-color: theme('colors.background'); color: theme('colors.text-primary'); }
+        .glass-card { background: rgba(29, 38, 59, 0.4); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid theme('colors.border'); }
+        .glass-card:hover { border-color: theme('colors.primary'); box-shadow: 0 4px 24px rgba(56, 189, 248, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15) 0%, rgba(11, 16, 32, 0) 70%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-text-primary antialiased selection:bg-primary-soft selection:text-primary min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-lg fixed top-0 w-full z-50 border-b border-border flat no-shadow">
+<div class="max-w-[1120px] mx-auto flex justify-between items-center px-gutter py-space-4">
+<div class="flex items-center gap-space-2 font-headline-2xl text-headline-2xl font-bold text-text-primary tracking-tight">
+<span class="material-symbols-outlined text-primary dark:text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                Catriel Bartezaghi
+            </div>
+<nav class="hidden md:flex items-center gap-space-6 font-body-base text-body-base">
+<a class="text-text-secondary hover:text-text-primary transition-colors duration-300" href="#about">About</a>
+<a class="text-text-secondary hover:text-text-primary transition-colors duration-300" href="#skills">Skills</a>
+<a class="text-text-secondary hover:text-text-primary transition-colors duration-300" href="#projects">Projects</a>
+<a class="text-text-secondary hover:text-text-primary transition-colors duration-300" href="#experience">Experience</a>
+</nav>
+<button class="font-body-base text-body-base bg-primary text-on-primary px-space-4 py-space-2 rounded-DEFAULT hover:bg-primary-hover active:scale-95 transition-all duration-200">
+                Resume
+            </button>
+</div>
+</header>
+<main class="flex-grow pt-space-24">
+<!-- Hero Section -->
+<section class="hero-gradient pt-section-desktop pb-section-desktop px-gutter relative overflow-hidden">
+<div class="max-w-[1120px] mx-auto grid md:grid-cols-2 gap-space-12 items-center">
+<div class="z-10">
+<div class="flex flex-wrap gap-space-2 mb-space-6">
+<span class="bg-primary-soft text-primary font-label-code text-label-code px-space-3 py-space-1 rounded-full border border-primary/20">Full Stack Developer</span>
+<span class="bg-secondary-soft text-secondary font-label-code text-label-code px-space-3 py-space-1 rounded-full border border-secondary/20">Backend-oriented</span>
+<span class="bg-surface-elevated text-text-secondary font-label-code text-label-code px-space-3 py-space-1 rounded-full border border-border flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> Argentina</span>
+</div>
+<h1 class="font-headline-5xl text-headline-5xl mb-space-6 text-text-primary tracking-tight">Building reliable software for real business workflows</h1>
+<p class="font-body-lg text-body-lg text-text-secondary mb-space-8 max-w-2xl leading-relaxed">
+                        I’m a Computer Engineer and Software Developer focused on backend logic, web applications, automation, and maintainable systems.
+                    </p>
+<div class="flex flex-wrap gap-space-4">
+<a class="bg-primary text-on-primary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:bg-primary-hover transition-all flex items-center gap-space-2" href="#projects">
+                            View Projects <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-transparent border border-border text-text-secondary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:border-primary hover:text-primary transition-all" href="#contact">
+                            Contact Me
+                        </a>
+</div>
+</div>
+<div class="hidden md:block relative z-10">
+<div class="glass-card rounded-xl p-space-6 aspect-square max-w-md ml-auto relative group">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<img alt="Code editor abstract representation" class="w-full h-full object-cover rounded-lg opacity-80 filter grayscale mix-blend-luminosity group-hover:filter-none group-hover:mix-blend-normal transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoAfD31FaeU2uVFcv_SPv3IRHZjIZnHrCUBmMcAQQXu8StWZMKpqx_b9OD-_KEuF5A75G6C8HqoQotTuhZygUZ872YJk7KAHKVK0d-vnn54qHOFy93Oq09xnuZh-gExY3aQvObfNsprecyK6ZyodkAu7HN0TA-dWLLZ8nCi5Po-TAQv9BWoIIRAEt3wbLydAw9Y1jF5epKbTL-qZveSTVIusACKyjc2UjxDl5xPvLjY-6YwLC28VAup0MIDSGW2oQcowfdBljnddg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-desktop px-gutter" id="about">
+<div class="max-w-[1120px] mx-auto grid md:grid-cols-12 gap-space-12">
+<div class="md:col-span-8">
+<h2 class="font-headline-3xl text-headline-3xl mb-space-6 text-primary flex items-center gap-space-3">
+<span class="material-symbols-outlined">info</span> About Me
+                    </h2>
+<div class="font-body-lg text-body-lg text-text-secondary space-y-space-4">
+<p>I am a Computer Engineer with a strong focus on building robust backend systems and automating complex business processes. My passion lies in understanding the core logic behind business workflows and translating them into efficient, maintainable software solutions.</p>
+<p>With experience bridging the gap between legacy systems and modern architectures, I prioritize code quality, comprehensive testing, and clear communication to ensure long-term reliability.</p>
+</div>
+</div>
+<div class="md:col-span-4">
+<div class="glass-card rounded-xl p-space-6 h-full">
+<h3 class="font-headline-2xl text-headline-2xl mb-space-4 text-text-primary border-b border-border pb-space-2">Quick Facts</h3>
+<ul class="space-y-space-3 font-body-base text-body-base text-text-secondary">
+<li class="flex items-center gap-space-3"><span class="material-symbols-outlined text-primary">school</span> Computer Engineer</li>
+<li class="flex items-center gap-space-3"><span class="material-symbols-outlined text-primary">public</span> Based in Argentina</li>
+<li class="flex items-center gap-space-3"><span class="material-symbols-outlined text-primary">code</span> Backend Focus</li>
+<li class="flex items-center gap-space-3"><span class="material-symbols-outlined text-primary">language</span> English &amp; Spanish</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-desktop px-gutter bg-surface-container/50 border-y border-border" id="skills">
+<div class="max-w-[1120px] mx-auto">
+<h2 class="font-headline-3xl text-headline-3xl mb-space-12 text-center text-text-primary">Technical Arsenal</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-space-6">
+<!-- Backend -->
+<div class="glass-card rounded-xl p-space-6 transition-all">
+<h3 class="font-headline-2xl text-headline-2xl mb-space-4 text-primary flex items-center gap-space-2 border-b border-border pb-space-2">
+<span class="material-symbols-outlined">database</span> Backend
+        </h3>
+<ul class="space-y-space-2 font-body-base text-body-base text-text-secondary">
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> PHP &amp; Laravel</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> MySQL</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> REST APIs</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> PHPUnit</li>
+</ul>
+</div>
+<!-- Frontend -->
+<div class="glass-card rounded-xl p-space-6 transition-all">
+<h3 class="font-headline-2xl text-headline-2xl mb-space-4 text-secondary flex items-center gap-space-2 border-b border-border pb-space-2">
+<span class="material-symbols-outlined">web</span> Frontend
+        </h3>
+<ul class="space-y-space-2 font-body-base text-body-base text-text-secondary">
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> JavaScript &amp; jQuery</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Tailwind CSS</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Bootstrap</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> WordPress</li>
+</ul>
+</div>
+<!-- DevOps -->
+<div class="glass-card rounded-xl p-space-6 transition-all">
+<h3 class="font-headline-2xl text-headline-2xl mb-space-4 text-tertiary flex items-center gap-space-2 border-b border-border pb-space-2">
+<span class="material-symbols-outlined">dns</span> DevOps &amp; Tools
+        </h3>
+<ul class="space-y-space-2 font-body-base text-body-base text-text-secondary">
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Docker</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Git &amp; GitLab CI/CD</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Linux</li>
+</ul>
+</div>
+<!-- AI -->
+<div class="glass-card rounded-xl p-space-6 transition-all">
+<h3 class="font-headline-2xl text-headline-2xl mb-space-4 text-primary flex items-center gap-space-2 border-b border-border pb-space-2">
+<span class="material-symbols-outlined">smart_toy</span> AI &amp; Automation
+        </h3>
+<ul class="space-y-space-2 font-body-base text-body-base text-text-secondary">
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> OpenAI API</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Twilio</li>
+<li class="flex items-center gap-space-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Workflow Automation</li>
+</ul>
+</div>
+</div>
+</div>
+</section><!-- Engineering Highlights Section -->
+<section class="py-section-desktop px-gutter bg-background" id="highlights">
+<div class="max-w-[1120px] mx-auto">
+<h2 class="font-headline-3xl text-headline-3xl mb-space-12 text-center text-text-primary">
+            Engineering Highlights
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-space-4">
+<div class="glass-card rounded-xl p-space-4 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-space-2">verified</span>
+<p class="font-body-sm text-body-sm text-text-secondary">GitLab CI/CD validation workflows</p>
+</div>
+<div class="glass-card rounded-xl p-space-4 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-space-2">check_circle</span>
+<p class="font-body-sm text-body-sm text-text-secondary">PHPUnit and integration tests</p>
+</div>
+<div class="glass-card rounded-xl p-space-4 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-space-2">rule</span>
+<p class="font-body-sm text-body-sm text-text-secondary">Migration checks</p>
+</div>
+<div class="glass-card rounded-xl p-space-4 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-space-2">speed</span>
+<p class="font-body-sm text-body-sm text-text-secondary">SQL performance optimization</p>
+</div>
+<div class="glass-card rounded-xl p-space-4 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-space-2">update</span>
+<p class="font-body-sm text-body-sm text-text-secondary">Legacy UI modernization</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-desktop px-gutter" id="projects">
+<div class="max-w-[1120px] mx-auto">
+<h2 class="font-headline-3xl text-headline-3xl mb-space-12 text-text-primary flex items-center gap-space-3">
+<span class="material-symbols-outlined text-primary">work</span> Featured Projects
+</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-2 gap-space-8"><!-- Project 1 -->
+<div class="glass-card rounded-xl p-space-6 flex flex-col h-full group cursor-pointer">
+<div class="mb-space-2">
+<span class="font-label-xs text-label-xs text-primary uppercase tracking-wider">Professional Work · Serfe</span>
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary group-hover:text-primary transition-colors mt-space-1">Business Intranet Modules</h3>
+</div>
+<p class="font-body-base text-body-base text-text-secondary mb-space-4 flex-grow">Development of business-critical internal modules for traceability, inventory management, recipes, production processes, stock transfers, and supply control in legacy PHP/MySQL systems.</p>
+<div class="flex flex-wrap gap-space-2 mt-auto">
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">PHP</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">MySQL</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">JavaScript</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Legacy Systems</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-card rounded-xl p-space-6 flex flex-col h-full group cursor-pointer">
+<div class="mb-space-2">
+<span class="font-label-xs text-label-xs text-primary uppercase tracking-wider">Professional Work · Cipax</span>
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary group-hover:text-primary transition-colors mt-space-1">WhatsApp Finance Assistant</h3>
+</div>
+<p class="font-body-base text-body-base text-text-secondary mb-space-4 flex-grow">Laravel-based accounting workflow that integrates Twilio and OpenAI APIs to record financial transactions from WhatsApp messages using natural language input.</p>
+<div class="flex flex-wrap gap-space-2 mt-auto">
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Laravel</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">OpenAI API</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Twilio</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">WhatsApp</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-card rounded-xl p-space-6 flex flex-col h-full group cursor-pointer">
+<div class="mb-space-2">
+<span class="font-label-xs text-label-xs text-primary uppercase tracking-wider">Personal Project</span>
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary group-hover:text-primary transition-colors mt-space-1">TallyNorth</h3>
+</div>
+<p class="font-body-base text-body-base text-text-secondary mb-space-4 flex-grow">A full-stack personal finance platform for cash flow projection, multi-currency accounts, recurring expenses, and credit card installment tracking.</p>
+<div class="flex flex-wrap gap-space-2 mt-auto">
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Next.js</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">TypeScript</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">FastAPI</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">PostgreSQL</span>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="glass-card rounded-xl p-space-6 flex flex-col h-full group cursor-pointer">
+<div class="mb-space-2">
+<span class="font-label-xs text-label-xs text-primary uppercase tracking-wider">Academic Project</span>
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary group-hover:text-primary transition-colors mt-space-1">Intelligent Investment Decision System</h3>
+</div>
+<p class="font-body-base text-body-base text-text-secondary mb-space-4 flex-grow">A decision support system for the financial market using machine learning on time series data.</p>
+<div class="flex flex-wrap gap-space-2 mt-auto">
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Python</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">PyTorch</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">Docker</span>
+<span class="bg-surface-elevated text-text-secondary font-label-xs text-label-xs px-space-2 py-space-1 rounded border border-border">ML</span>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-section-desktop px-gutter bg-surface-container/30 border-y border-border" id="experience">
+<div class="max-w-[800px] mx-auto">
+<h2 class="font-headline-3xl text-headline-3xl mb-space-12 text-center text-text-primary">Experience</h2>
+<div class="relative border-l border-border ml-space-4 md:ml-0 md:border-none space-y-space-12">
+<!-- Experience 1 -->
+<div class="relative md:grid md:grid-cols-5 items-start pl-space-6 md:pl-0">
+<div class="hidden md:block md:col-span-1 text-right pr-space-8 pt-1">
+<span class="font-label-code text-label-code text-primary">2025 - Present</span>
+</div>
+<div class="absolute left-0 top-1.5 md:left-1/5 md:-ml-2 w-4 h-4 rounded-full bg-background border-2 border-primary z-10"></div>
+<div class="md:hidden mb-space-2">
+<span class="font-label-code text-label-code text-primary">2025 - Present</span>
+</div>
+<div class="md:col-span-4 md:pl-space-8 md:border-l border-border pb-space-8">
+<div class="glass-card rounded-xl p-space-6">
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary mb-space-1">Software Engineer</h3>
+<h4 class="font-body-lg text-body-lg text-secondary mb-space-4">Serfe</h4>
+<p class="font-body-base text-body-base text-text-secondary">Developing and maintaining scalable web applications. Focusing on backend architecture, API integrations, and ensuring high code quality across diverse client projects.</p>
+</div>
+</div>
+</div>
+<!-- Experience 2 -->
+<div class="relative md:grid md:grid-cols-5 items-start pl-space-6 md:pl-0">
+<div class="hidden md:block md:col-span-1 text-right pr-space-8 pt-1">
+<span class="font-label-code text-label-code text-text-muted">2024</span>
+</div>
+<div class="absolute left-0 top-1.5 md:left-1/5 md:-ml-2 w-4 h-4 rounded-full bg-background border-2 border-border z-10"></div>
+<div class="md:hidden mb-space-2">
+<span class="font-label-code text-label-code text-text-muted">2024</span>
+</div>
+<div class="md:col-span-4 md:pl-space-8 md:border-l border-border h-full">
+<div class="glass-card rounded-xl p-space-6">
+<h3 class="font-headline-2xl text-headline-2xl text-text-primary mb-space-1">Software Developer</h3>
+<h4 class="font-body-lg text-body-lg text-secondary mb-space-4">Cipax</h4>
+<p class="font-body-base text-body-base text-text-secondary">Built and maintained internal tools and business logic systems. Automated manual processes to improve operational efficiency and reliability.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-desktop px-gutter" id="contact">
+<div class="max-w-[800px] mx-auto text-center">
+<h2 class="font-headline-4xl text-headline-4xl mb-space-6 text-text-primary">Interested in working together?</h2>
+<p class="font-body-xl text-body-xl text-text-secondary mb-space-12 max-w-2xl mx-auto">Whether you need robust backend solutions, automated workflows, or reliable software architecture, I'm open to discussing how I can help your team.</p>
+<div class="flex flex-wrap justify-center gap-space-4">
+<a class="bg-primary text-on-primary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:bg-primary-hover transition-all flex items-center gap-space-2" href="mailto:contact@example.com">
+<span class="material-symbols-outlined">mail</span> Email Me
+    </a>
+<a class="bg-surface-elevated border border-border text-text-primary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:border-primary transition-all flex items-center gap-space-2" href="#">
+        LinkedIn
+    </a>
+<a class="bg-surface-elevated border border-border text-text-primary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:border-primary transition-all flex items-center gap-space-2" href="#">
+        GitHub
+    </a>
+<a class="bg-transparent border border-primary text-primary font-body-base text-body-base px-space-6 py-space-3 rounded-DEFAULT hover:bg-primary-soft transition-all flex items-center gap-space-2" href="#">
+<span class="material-symbols-outlined">description</span> Resume
+    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background dark:bg-background full-width mt-space-24 border-t border-border flat">
+<div class="max-w-[1120px] mx-auto px-gutter py-space-12 flex flex-col md:flex-row justify-between items-center gap-space-6">
+<div class="font-label-code text-label-code text-primary opacity-80 hover:opacity-100 transition-opacity">
+                © 2024 Catriel Bartezaghi. Built for reliability. Argentina.
+            </div>
+<nav class="flex gap-space-6 font-body-sm text-body-sm">
+<a class="text-text-muted hover:text-text-primary transition-colors hover:text-primary transition-all" href="#">GitHub</a>
+<a class="text-text-muted hover:text-text-primary transition-colors hover:text-primary transition-all" href="#">LinkedIn</a>
+<a class="text-text-muted hover:text-text-primary transition-colors hover:text-primary transition-all" href="#">Email</a>
+</nav>
+</div>
+</footer>
+</body></html>
