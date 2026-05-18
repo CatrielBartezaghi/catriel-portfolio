@@ -1,7 +1,6 @@
 import { 
-  Database, Server, Globe, Lightbulb, Workflow, 
-  ShieldCheck, Activity, Laptop, LayoutTemplate,
-  Mail, FileText, Blocks
+  Database, Globe, Lightbulb, Workflow, 
+  ShieldCheck, LayoutTemplate
 } from "lucide-react";
 
 export const portfolioData = {
@@ -114,7 +113,7 @@ export const portfolioData = {
   projects: [
     {
       title: "Business-Critical Intranet Modules",
-      type: "Professional Work · Serfe",
+      type: "Professional Work - Serfe",
       description: "Built internal modules for manufacturing workflows, including traceability, inventory, recipes, production processes, stock transfers, and supply control.",
       focus: [
         "Legacy PHP/MySQL systems",
@@ -126,7 +125,7 @@ export const portfolioData = {
     },
     {
       title: "WhatsApp Finance Assistant",
-      type: "Professional Work · Cipax",
+      type: "Professional Work - Cipax",
       description: "Built a Laravel-based accounting workflow that integrates Twilio and OpenAI APIs to capture financial transactions from WhatsApp messages using natural language.",
       focus: [
         "Laravel business logic",
@@ -163,7 +162,7 @@ export const portfolioData = {
   ],
   experience: [
     {
-      year: "Apr 2025 – Present",
+      year: "Apr 2025 - Present",
       role: "Full Stack Developer",
       company: "Serfe",
       bullets: [
@@ -175,7 +174,7 @@ export const portfolioData = {
       current: true
     },
     {
-      year: "Jan 2024 – Apr 2025",
+      year: "Jan 2024 - Apr 2025",
       role: "Full Stack Developer",
       company: "Cipax",
       bullets: [
@@ -189,7 +188,7 @@ export const portfolioData = {
   ],
   contact: {
     headline: "Interested in building reliable business software?",
-    description: "I’m open to backend-oriented full stack roles where I can work on business logic, data-heavy systems, automation, integrations, and maintainable web applications.",
+    description: "I'm open to backend-oriented full stack roles where I can work on business logic, data-heavy systems, automation, integrations, and maintainable web applications.",
     email: "catriel.barte@gmail.com",
     links: {
       linkedin: "https://linkedin.com/in/catrielbartezaghi/",

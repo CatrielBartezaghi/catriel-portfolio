@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Catriel Bartezaghi — Software Developer",
+  title: "Catriel Bartezaghi - Software Developer",
   description: "Portfolio of Catriel Bartezaghi, a Computer Engineer and Software Developer focused on backend logic, web applications, automation, and maintainable business systems.",
   openGraph: {
-    title: "Catriel Bartezaghi — Software Developer",
+    title: "Catriel Bartezaghi - Software Developer",
     description: "Backend-oriented software developer building reliable web applications, internal tools, and automation solutions.",
     type: "website",
   }

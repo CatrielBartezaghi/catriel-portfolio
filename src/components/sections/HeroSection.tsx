@@ -1,6 +1,6 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
-import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   const { hero } = portfolioData;
@@ -27,7 +27,6 @@ export function HeroSection() {
               }
               return (
                 <span key={idx} className="bg-surface-elevated text-text-secondary font-mono text-sm px-3 py-1 rounded-full border border-border flex items-center gap-1">
-                  {(tag as any).icon === "location" && <MapPin className="w-3.5 h-3.5" />}
                   {tag.label}
                 </span>
               );
@@ -64,11 +63,16 @@ export function HeroSection() {
           <div className="glass-card rounded-xl p-6 aspect-square max-w-md ml-auto relative group">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             {/* Using the abstract image from the design export */}
-            <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoAfD31FaeU2uVFcv_SPv3IRHZjIZnHrCUBmMcAQQXu8StWZMKpqx_b9OD-_KEuF5A75G6C8HqoQotTuhZygUZ872YJk7KAHKVK0d-vnn54qHOFy93Oq09xnuZh-gExY3aQvObfNsprecyK6ZyodkAu7HN0TA-dWLLZ8nCi5Po-TAQv9BWoIIRAEt3wbLydAw9Y1jF5epKbTL-qZveSTVIusACKyjc2UjxDl5xPvLjY-6YwLC28VAup0MIDSGW2oQcowfdBljnddg"
-              alt="Code editor abstract representation" 
-              className="w-full h-full object-cover rounded-lg opacity-80 filter grayscale mix-blend-luminosity group-hover:filter-none group-hover:mix-blend-normal transition-all duration-700" 
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoAfD31FaeU2uVFcv_SPv3IRHZjIZnHrCUBmMcAQQXu8StWZMKpqx_b9OD-_KEuF5A75G6C8HqoQotTuhZygUZ872YJk7KAHKVK0d-vnn54qHOFy93Oq09xnuZh-gExY3aQvObfNsprecyK6ZyodkAu7HN0TA-dWLLZ8nCi5Po-TAQv9BWoIIRAEt3wbLydAw9Y1jF5epKbTL-qZveSTVIusACKyjc2UjxDl5xPvLjY-6YwLC28VAup0MIDSGW2oQcowfdBljnddg"
+                alt="Code editor abstract representation"
+                fill
+                unoptimized
+                sizes="(min-width: 768px) 448px, 0px"
+                className="object-cover rounded-lg opacity-80 filter grayscale mix-blend-luminosity group-hover:filter-none group-hover:mix-blend-normal transition-all duration-700"
+              />
+            </div>
           </div>
         </div>
       </div>
