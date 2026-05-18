@@ -5,7 +5,7 @@ export function ExperienceSection() {
   const { experience } = portfolioData;
 
   return (
-    <section id="experience" className="py-32 px-6 bg-surface-container-highest/30 border-y border-border">
+    <section id="experience" className="py-24 px-6 bg-surface-container-highest/30 border-y border-border">
       <div className="max-w-[800px] mx-auto">
         <h2 className="text-3xl font-semibold mb-12 text-center text-text-primary">
           Experience

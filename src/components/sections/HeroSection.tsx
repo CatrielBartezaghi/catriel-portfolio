@@ -6,7 +6,7 @@ export function HeroSection() {
   const { hero } = portfolioData;
 
   return (
-    <section className="hero-gradient pt-32 pb-32 px-6 relative overflow-hidden">
+    <section className="hero-gradient pt-32 pb-24 px-6 relative overflow-hidden">
       <div className="max-w-[1120px] mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="z-10">
           <div className="flex flex-wrap gap-2 mb-6">

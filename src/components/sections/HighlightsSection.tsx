@@ -4,7 +4,7 @@ export function HighlightsSection() {
   const { highlights } = portfolioData;
 
   return (
-    <section id="highlights" className="py-32 px-6 bg-background">
+    <section id="highlights" className="py-24 px-6 bg-background">
       <div className="max-w-[1120px] mx-auto">
         <h2 className="text-3xl font-semibold mb-12 text-center text-text-primary">
           Engineering Highlights

@@ -5,7 +5,7 @@ export function ContactSection() {
   const { contact } = portfolioData;
 
   return (
-    <section id="contact" className="py-32 px-6">
+    <section id="contact" className="py-24 px-6">
       <div className="max-w-[800px] mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-text-primary tracking-tight">
           {contact.headline}

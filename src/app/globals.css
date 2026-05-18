@@ -41,6 +41,10 @@ body {
   min-height: 100dvh;
 }
 
+section {
+  scroll-margin-top: 96px;
+}
+
 .glass-card {
   background: rgba(29, 38, 59, 0.4);
   backdrop-filter: blur(16px);

@@ -12,8 +12,8 @@ export function Navbar() {
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-base">
           <Link href="#about" className="text-text-secondary hover:text-text-primary transition-colors duration-300">About</Link>
-          <Link href="#skills" className="text-text-secondary hover:text-text-primary transition-colors duration-300">Skills</Link>
           <Link href="#projects" className="text-text-secondary hover:text-text-primary transition-colors duration-300">Projects</Link>
+          <Link href="#skills" className="text-text-secondary hover:text-text-primary transition-colors duration-300">Skills</Link>
           <Link href="#experience" className="text-text-secondary hover:text-text-primary transition-colors duration-300">Experience</Link>
         </nav>
         <a 

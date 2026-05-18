@@ -5,7 +5,7 @@ export function SkillsSection() {
   const { skills } = portfolioData;
 
   return (
-    <section id="skills" className="py-32 px-6 bg-surface-container-highest/50 border-y border-border">
+    <section id="skills" className="py-24 px-6 bg-surface-container-highest/50 border-y border-border">
       <div className="max-w-[1120px] mx-auto">
         <h2 className="text-3xl font-semibold mb-12 text-center text-text-primary">
           Technical Skills

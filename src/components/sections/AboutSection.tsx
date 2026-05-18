@@ -17,7 +17,7 @@ export function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-32 px-6">
+    <section id="about" className="py-24 px-6">
       <div className="max-w-[1120px] mx-auto grid md:grid-cols-12 gap-12">
         <div className="md:col-span-8">
           <h2 className="text-3xl font-semibold mb-6 text-primary flex items-center gap-3">
