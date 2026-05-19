@@ -114,6 +114,7 @@ export const portfolioData = {
     {
       title: "Business-Critical Intranet Modules",
       type: "Professional Work - Serfe",
+      badge: "Corporate",
       description: "Built internal modules for manufacturing workflows, including traceability, inventory, recipes, production processes, stock transfers, and supply control.",
       focus: [
         "Legacy PHP/MySQL systems",
@@ -121,11 +122,17 @@ export const portfolioData = {
         "SQL reliability",
         "Testing and validation workflows"
       ],
-      tags: ["PHP", "MySQL", "JavaScript", "Legacy Systems", "SQL", "GitLab CI/CD", "PHPUnit"]
+      tags: ["PHP", "MySQL", "JavaScript", "Legacy Systems", "SQL", "GitLab CI/CD", "PHPUnit"],
+      link: {
+        href: "https://www.serfe.com/",
+        label: "Company Website",
+        kind: "external"
+      }
     },
     {
       title: "WhatsApp Finance Assistant",
       type: "Professional Work - Cipax",
+      badge: "FinTech",
       description: "Built a Laravel-based accounting workflow that integrates Twilio and OpenAI APIs to capture financial transactions from WhatsApp messages using natural language.",
       focus: [
         "Laravel business logic",
@@ -133,11 +140,17 @@ export const portfolioData = {
         "OpenAI and Twilio integrations",
         "Structured accounting operations from natural language input"
       ],
-      tags: ["Laravel", "FilamentPHP", "MySQL", "OpenAI API", "Twilio", "WhatsApp", "Docker"]
+      tags: ["Laravel", "FilamentPHP", "MySQL", "OpenAI API", "Twilio", "WhatsApp", "Docker"],
+      link: {
+        href: "https://cipax.dev/",
+        label: "Company Website",
+        kind: "external"
+      }
     },
     {
       title: "TallyNorth",
       type: "Personal Project",
+      badge: "Product",
       description: "A full-stack personal finance platform for cash flow projection, multi-currency accounts, recurring expenses, and credit card installment tracking.",
       focus: [
         "Backend API design",
@@ -145,11 +158,17 @@ export const portfolioData = {
         "Modern full-stack architecture",
         "Product thinking"
       ],
-      tags: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "SQLAlchemy", "Tailwind CSS", "shadcn/ui"]
+      tags: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "SQLAlchemy", "Tailwind CSS", "shadcn/ui"],
+      link: {
+        href: "https://tally-north.vercel.app/",
+        label: "Live App",
+        kind: "external"
+      }
     },
     {
       title: "Intelligent Investment Decision System",
       type: "Academic Project",
+      badge: "Academic",
       description: "A decision support system for financial markets using machine learning models on time series data.",
       focus: [
         "Data preprocessing",
@@ -157,7 +176,12 @@ export const portfolioData = {
         "Evaluation",
         "Software packaging"
       ],
-      tags: ["Python", "PyTorch", "SQLite", "Docker", "Machine Learning", "Time Series"]
+      tags: ["Python", "PyTorch", "SQLite", "Docker", "Machine Learning", "Time Series"],
+      link: {
+        href: "/catriel-bartezaghi-investment-decision-system-thesis.pdf",
+        label: "Read Thesis",
+        kind: "document"
+      }
     }
   ],
   experience: [
